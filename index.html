@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Health Analysis Data</title>
+        <link rel="stylesheet" href="./health_analysis.css">
+    </head>
+    <body>
+        <nav><h1>Health Analysis Census</h1>
+            <ul>
+                <li><a href="./index.html" id="home">Home</a></li>
+                <li><a href="./health_contact.html" id="contact">Cotact Us</a></li>
+                <li><input type="text" placeholder="Enter a health condition"></li>
+                <li><button id='btnSearch'>Search</button></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="analysisForm">
+                <h1>Healthcare Data Analysis</h1>
+
+                <form>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                        <input type="radio" name="gender" id="male" value:"Male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value:"Female">
+                        <label for="female">Female</label>
+
+                    </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <input id="age" type="number">
+                </div>
+            <div>
+                    <label for="condition">Condition:</label>
+                    <select id="condition">
+                        <option value="">Select condition</option>
+                        <option value="Diabetes">Diabetes</option>
+                        <option value="Thyroid">Thyroid</option>
+                        <option value="High Blood Pressure">High Blood Pressure</option>
+                    </select>
+                </div>
+                    <button id="addPatient">Add Patient</button>
+                </form>
+            </div>
+            <div>
+                <h2>Analysis Report</h2>
+                <div id="report"></div>
+            
+                <div class="searchCondition">
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+        <script src="./health_analysis.js"></script>
+    </body>
+</html>
